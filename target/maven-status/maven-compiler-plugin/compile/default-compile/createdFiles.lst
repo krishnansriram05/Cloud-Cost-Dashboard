@@ -1,0 +1,5 @@
+com/example/cloudcost/model/CloudCost.class
+com/example/cloudcost/service/CloudCostService.class
+com/example/cloudcost/repository/CloudCostRepository.class
+com/example/cloudcost/CloudCostDashboardApplication.class
+com/example/cloudcost/controller/CloudCostController.class

@@ -1,0 +1,53 @@
+nohup: ignoring input
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-06-16T15:22:39.929Z  INFO 3236 --- [           main] c.e.c.CloudCostDashboardApplication      : Starting CloudCostDashboardApplication v1.0 using Java 17.0.19 with PID 3236 (/home/ubuntu/cloud-cost-dashboard/target/cloud-cost-dashboard-1.0.jar started by ubuntu in /home/ubuntu/cloud-cost-dashboard)
+2026-06-16T15:22:39.941Z  INFO 3236 --- [           main] c.e.c.CloudCostDashboardApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-06-16T15:22:42.588Z  INFO 3236 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-16T15:22:42.725Z  INFO 3236 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2026-06-16T15:22:44.281Z  INFO 3236 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-16T15:22:44.315Z  INFO 3236 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-16T15:22:44.315Z  INFO 3236 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-06-16T15:22:44.493Z  INFO 3236 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-16T15:22:44.495Z  INFO 3236 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4371 ms
+2026-06-16T15:22:45.288Z  INFO 3236 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-16T15:22:45.426Z  INFO 3236 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-06-16T15:22:45.496Z  INFO 3236 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-16T15:22:46.147Z  INFO 3236 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-16T15:22:46.196Z  INFO 3236 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-16T15:22:47.065Z  INFO 3236 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@508f4bb5
+2026-06-16T15:22:47.072Z  INFO 3236 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-16T15:22:49.094Z  INFO 3236 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-16T15:22:49.209Z  INFO 3236 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T15:22:49.981Z  WARN 3236 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-16T15:22:51.589Z  INFO 3236 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-06-16T15:22:51.764Z  WARN 3236 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-16T15:22:51.769Z  INFO 3236 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-16T15:22:51.774Z  INFO 3236 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-16T15:22:51.798Z  INFO 3236 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-16T15:22:51.852Z  INFO 3236 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the cond2026-06-16T16:10:00.850Z  INFO 3116 --- [nio-8080-exec-9] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xee0x010x000x000xea0x030x030xc2&0xbcM0xec0xdd0xb0N0xc20x020x1b560x0a0xa10xc50xb80x040x9bS8K0xdclD0x0d+0xefW0x8f-; ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+Hibernate: select cc1_0.id,cc1_0.billing_month,cc1_0.cost,cc1_0.service_name from cloud_cost cc1_0
+Hibernate: select cc1_0.id,cc1_0.billing_month,cc1_0.cost,cc1_0.service_name from cloud_cost cc1_0

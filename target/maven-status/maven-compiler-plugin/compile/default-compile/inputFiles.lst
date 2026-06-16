@@ -1,0 +1,5 @@
+/home/ubuntu/cloud-cost-dashboard/src/main/java/com/example/cloudcost/CloudCostDashboardApplication.java
+/home/ubuntu/cloud-cost-dashboard/src/main/java/com/example/cloudcost/controller/CloudCostController.java
+/home/ubuntu/cloud-cost-dashboard/src/main/java/com/example/cloudcost/model/CloudCost.java
+/home/ubuntu/cloud-cost-dashboard/src/main/java/com/example/cloudcost/repository/CloudCostRepository.java
+/home/ubuntu/cloud-cost-dashboard/src/main/java/com/example/cloudcost/service/CloudCostService.java
